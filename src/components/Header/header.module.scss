@@ -1,0 +1,94 @@
+@import '@/styles/variables.scss';
+
+.header {
+  padding: 15px 0;
+  border-color: black;
+  background-color: $color-light;
+
+  &__row {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: flex-end;
+  }
+}
+
+.logo {
+  line-height: 1;
+  text-decoration: none;
+}
+
+.workTime {
+  margin-left: 45px;
+  display: flex;
+  flex-direction: column;
+
+  & > :first-child {
+    margin-bottom: 5px;
+  }
+}
+
+.social {
+  margin-left: auto;
+
+  &__title {
+    display: inline-block;
+    margin-bottom: 6px;
+  }
+}
+
+.phone {
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+
+  &__link {
+    margin-top: 8px;
+    padding: 8px 10px;
+    width: 227px;
+    height: 40px;
+    font-family: "SF UI Display", sans-serif;
+    font-size: 22px;
+    text-align: center;
+    color: #fff;
+    background: #1d1c2e;
+    border-radius: 20px;
+  }
+}
+
+.modalBtn {
+  margin-left: 15px;
+  display: inline-block;
+  width: 190px;
+  height: 40px;
+  font-family: 'SF UI Display';
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 0.06em;
+  color: $color-dark;
+  border: 1px solid $color-dark;
+  border-radius: 60px;
+}
+
+.nav {
+  background-color: #1d1c2e;
+  border-radius: 60px;
+  text-align: center;
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      border-right: 1px solid #474747;
+    }
+  }
+
+  &__link {
+    display: inline-block;
+    padding: 19px 40px 20px;
+    color: $color-light;
+  }
+}

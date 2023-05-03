@@ -1,0 +1,17 @@
+.advantages {
+  background: linear-gradient(#fff, #f4f4f4);
+}
+
+.title {
+  margin: 0 auto;
+  max-width: 865px;
+}
+
+.list {
+  margin-top: 54px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  column-gap: 20px;
+  row-gap: 35px;
+}

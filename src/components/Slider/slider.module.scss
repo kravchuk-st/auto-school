@@ -1,0 +1,31 @@
+.content {
+  margin-top: 70px;
+}
+
+.mySwiper {
+  .slide {
+    // flex-shrink: 100 !important;
+    // width: 560px;
+    height: 320px;
+    background: #D9D9D9;
+    border-radius: 20px;
+  }
+}
+
+.control {
+  margin-top: 35px;
+  display: flex;
+  justify-content: center;
+
+  .btn {
+    width: 50px;
+    height: 40px;
+    background: url("/svg/arrow-slider.svg") right 10px center no-repeat;
+    border: 1px solid #a7a7a7;
+    border-radius: 20px 0 0 20px;
+  }
+
+  .nextBtn {
+    transform: scale(-1, 1);
+  }
+}

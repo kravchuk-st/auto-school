@@ -1,0 +1,51 @@
+@import '@/styles/variables.scss';
+
+.content {
+  margin-top: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  column-gap: 90px;
+  row-gap: 50px;
+}
+
+.item {
+  align-self:stretch;
+  position: relative;
+  width: 320px;
+  padding: 28px 50px 28px 115px;
+  font-weight: 400;
+  line-height: 1.4375;
+  color: $color-black;
+  background-color: $color-light;
+  border-radius: 12px;
+
+  &::before {
+    position: absolute;
+    z-index: 2;
+    top: -10px;
+    left: -60px;
+    content: "";
+    width: 145px;
+    height: 145px;
+    border-radius: 50%;
+    filter: drop-shadow(0px 15px 30px rgba(255, 0, 0, 0.2));
+  }
+
+  &:nth-child(1)::before {
+    content: url('/img/education/0.png');
+  }
+
+  &:nth-child(2)::before {
+    content: url('/img/education/1.png');
+  }
+
+  &:nth-child(3)::before {
+    content: url('/img/education/2.png');
+  }
+
+  &__text {
+    max-width: 155px;
+  }
+}

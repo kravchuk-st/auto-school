@@ -1,0 +1,107 @@
+@import '@/styles/variables.scss';
+
+.content {
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-between;
+  column-gap: 20px;
+}
+
+.img {
+  border-radius: 20px;
+}
+
+.form_content {
+  max-width: 400px;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 1.2;
+  color: $color-black;
+}
+
+.subtitle {
+  margin-top: 5px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.25;
+  color: #474747;
+}
+
+.form {
+  margin-top: 30px;
+
+  &__input {
+    width: 100%;
+    max-width: 400px;
+    padding: 35px 40px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #696969;
+    background-color: #ededed;
+    outline: none;
+    border: none;
+    border-radius: 12px;
+
+    &:not(:first-child) {
+      margin-top: 24px;
+    }
+  }
+
+  &__btn {
+    margin-top: 30px;
+    padding: 36px 52px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.06em;
+    color: $color-light;
+    background-color: $color-danger;
+    box-shadow: 0px 15px 30px rgba(255, 0, 0, 0.2), 0px 3px 0px #D12121, inset 0px 0px 30px rgba(255, 255, 255, 0.2);
+    border-radius: 60px;
+
+    &:hover {
+      background: $color-danger-active;
+      box-shadow: 0px 15px 30px rgba(255, 0, 0, 0.5), 0px 3px 0px #D12121, inset 0px 0px 30px rgba(255, 255, 255, 0.2);
+    }
+  }
+
+  &__info {
+    max-width: 290px;
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #898989;
+  }
+}
+
+.social {
+  margin-top: 35px;
+
+  &__text {
+    margin-bottom: 15px;
+    font-size: 18px;
+    line-height: 1.16666;
+    color: #474747;
+  }
+
+  &_list {
+    column-gap: 30px;
+
+    a > svg {
+      width: 60px;
+      height: 60px;
+    }
+  }
+
+  &__image {
+    width: 60px;
+    height: 60px;
+  }
+}

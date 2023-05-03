@@ -1,0 +1,44 @@
+@import '@/styles/variables.scss';
+
+.sort {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+
+  &__btn {
+    padding: 18px 25px;
+    font-weight: 300;
+    font-size: 15px; 
+    color: $color-black;
+    background: $bg-btn-secondary;
+    border-radius: 25px;
+  }
+}
+
+.cards {
+  margin-top: 35px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  column-gap: 10px;
+  row-gap: 45px;
+
+  &__link {
+    align-self: stretch;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 380px;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: $color-light;
+    background: #EE3030;
+    border-radius: 12px;
+  }
+}

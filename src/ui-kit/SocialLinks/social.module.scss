@@ -1,0 +1,27 @@
+.social {
+  &__list {
+    line-height: 0;
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+  }
+
+  &__img {
+    width: 40px;
+    height: 40px;
+    fill: #cecece;
+    transition: fill .3s;
+
+    &_wa:hover {
+      fill: #4bc32c;
+    }
+
+    &_tg:hover {
+      fill: #4497e3;
+    }
+
+    &_v:hover {
+      fill: #ba44e3;
+    }
+  }
+}

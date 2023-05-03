@@ -1,0 +1,122 @@
+@import '@/styles/variables.scss';
+
+.footer {
+  padding: 50px 0 110px;
+  color: $color-light;
+  background-color: $bg-footer;
+
+  :global {
+    .container {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+
+.logo {
+  width: max-content;
+
+  &__text {
+    max-width: 158px;
+    margin-left: auto;
+
+    :global {
+      .text-gray {
+        font-weight: 200;
+      }
+    }
+  }
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: 25px;
+
+  &__links {
+    margin-left: auto;
+  }
+
+  &__info {
+    margin-left: 70px;
+  }
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+
+  &__links {
+    li:nth-child(1) svg > use {
+      fill: #4bc42c;
+    }
+
+    li:nth-child(2) svg > use {
+      fill: #4497e3;
+    }
+
+    li:nth-child(3) svg > use {
+      fill: #ba44e3;
+    }
+  }
+}
+
+.workTime {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+
+  &__descr {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1px;
+    font-weight: 600;
+  }
+}
+
+.phone {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+
+  &__link {
+    font-family: 'SF UI Display';
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 1.181818;
+    color: #FFFFFF;
+    text-decoration: none;
+  }
+}
+
+.policy {
+  display: flex;
+  flex-direction: column;
+  row-gap: 7px;
+
+  &__link {
+    font-family: 'SF UI Display', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.75;
+    text-decoration-line: underline;
+    color: #E4E4E4;
+  }
+}
+
+.btn {
+  height: max-content;
+  margin-left: 30px;
+  padding: 22px 25px;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: $color-light;
+  border: 1px solid $color-light;
+  border-radius: 60px;
+}

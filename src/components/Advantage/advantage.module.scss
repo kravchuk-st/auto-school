@@ -1,0 +1,29 @@
+@import '@/styles/variables.scss';
+
+.advantage {
+  width: 100%;
+  max-width: 380px;
+  padding: 30px;
+  border-radius: 12px;
+  background-color: $color-light;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+
+.title {
+  max-width: 165px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.38888;
+  color: $color-black;
+}
+
+.text {
+  margin-top: 15px;
+  font-size: 14px;
+  line-height: 1.64;
+}
