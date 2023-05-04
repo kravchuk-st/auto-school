@@ -1,6 +1,8 @@
 import type { ReactNode } from 'react';
 import { useContext } from 'react';
 import { ModalContext } from '@/components/Layout/index';
+import FormModal from '../FormModal';
+import Button from '../Button';
 import stylesHelper from '@/helpers/stylesHelper';
 import styles from './modal.module.scss';
 
@@ -16,7 +18,7 @@ const Modal = ({ isOpen, modalChildren, styleNameContent = '' }: IProps) => {
 	let children;
 	switch (modalChildren) {
 		case 'form':
-			children = <>form</>;
+			children = <FormModal />;
 			break;
 		case 'Papayas':
 			console.log('Mangoes and papayas are $2.79 a pound.');
@@ -27,7 +29,13 @@ const Modal = ({ isOpen, modalChildren, styleNameContent = '' }: IProps) => {
 
 	return (
 		<div className={stylesHelper(styles.wrapper, isOpen ? styles.active : '')} onClick={handlerClick}>
-			<div className={stylesHelper(styles.content, styleNameContent)}>{children}</div>
+			<div
+				className={stylesHelper(styles.content, modalChildren === 'form' ? styles.content_form : '')}
+				onClick={(e) => e.stopPropagation()}
+			>
+				<Button title='×' styleName={styles.close_btn} fn={handlerClick} />
+				{children}
+			</div>
 		</div>
 	);
 };

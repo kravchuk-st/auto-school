@@ -14,6 +14,10 @@
     color: $color-black;
     background: $bg-btn-secondary;
     border-radius: 25px;
+
+    &:hover {
+      background: $color-danger-light;
+    }
   }
 }
 
@@ -26,19 +30,33 @@
   column-gap: 10px;
   row-gap: 45px;
 
-  &__link {
+  &__item {
     align-self: stretch;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     max-width: 380px;
+    color: $color-light;
+    background: #ee3030 center / cover no-repeat url('/img/blog-btn.png');
+    border-radius: 12px;
+  }
+
+  &__link {
+    width: 100%;
+    max-width: 255px;
+    padding: 15px 0;
     font-weight: 500;
     font-size: 30px;
-    line-height: 120%;
+    line-height: 1.2;
     text-transform: uppercase;
+    text-align: center;
     color: $color-light;
-    background: #EE3030;
-    border-radius: 12px;
+    background: #1d1c2e;
+    border-radius: 8px;
+
+    &:hover {
+      background: #4c4b61;
+    }
   }
 }

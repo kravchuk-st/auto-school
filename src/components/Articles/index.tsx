@@ -42,9 +42,11 @@ const Articles = () => {
 					{ArticlesData.map((el) => (
 						<AdvantageCard id={90} address={el.title} key={el.id} />
 					))}
-					<Link className={styles.cards__link} href='#'>
-						Читать блог
-					</Link>
+					<div className={styles.cards__item}>
+						<Link className={styles.cards__link} href='#'>
+							Читать блог
+						</Link>
+					</div>
 				</div>
 			</div>
 		</section>

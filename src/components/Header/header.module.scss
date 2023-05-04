@@ -52,6 +52,10 @@
     color: #fff;
     background: #1d1c2e;
     border-radius: 20px;
+
+    &:hover {
+      background: #4c4b61;
+    }
   }
 }
 
@@ -67,6 +71,12 @@
   color: $color-dark;
   border: 1px solid $color-dark;
   border-radius: 60px;
+
+  &:hover {
+    color: #fff;
+    background: #F04343;
+    border-color: #F04343;
+  }
 }
 
 .nav {
@@ -90,5 +100,9 @@
     display: inline-block;
     padding: 19px 40px 20px;
     color: $color-light;
+
+    &:hover {
+      background: #4c4b61;
+    }
   }
 }
