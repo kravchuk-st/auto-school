@@ -1,7 +1,12 @@
+import { useContext } from 'react';
+import { ModalContext } from '../Layout';
+import { ModalContent } from '@/types';
 import Button from '../../ui-kit/Button';
 import styles from './banner.module.scss';
 
 const Banner = () => {
+	const { showModal } = useContext(ModalContext);
+
 	return (
 		<section className={styles.banner}>
 			<div className='container'>
@@ -16,7 +21,7 @@ const Banner = () => {
 							<li className={styles.list__item}>Тренируем по маршруту ГИБДД в Екатеринбурге</li>
 							<li className={styles.list__item}>Без дополнительных платежей с гарантией в договоре</li>
 						</ul>
-						<Button />
+						<Button onClick={() => showModal(ModalContent.FORM)} />
 					</div>
 					<div className={styles.info}>
 						<span className={styles.line} />

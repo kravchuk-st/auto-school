@@ -1,11 +1,16 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import { useContext } from 'react';
+import { ModalContext } from '@/components/Layout';
+import { ModalContent } from '@/types';
 import SocialLinks from '@/ui-kit/SocialLinks';
 import Button from '@/ui-kit/Button';
 import stylesHelper from '@/helpers/stylesHelper';
 import styles from './footer.module.scss';
 
 const Footer = () => {
+	const { showModal } = useContext(ModalContext);
+
 	return (
 		<footer className={styles.footer}>
 			<div className='container'>
@@ -46,7 +51,7 @@ const Footer = () => {
 						</Link>
 					</div>
 				</div>
-				<Button styleName={styles.btn} title='ОБРАТНЫЙ ЗВОНОК' />
+				<Button styleName={styles.btn} title='ОБРАТНЫЙ ЗВОНОК' onClick={() => showModal(ModalContent.FORM)} />
 			</div>
 		</footer>
 	);

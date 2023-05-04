@@ -3,21 +3,34 @@ import Head from 'next/head';
 import Header from '../Header';
 import Footer from '../Footer';
 import Modal from '@/ui-kit/Modal';
+import { ModalContent } from '@/types';
 
 export const ModalContext = createContext<ILayoutContextType>({
-	modalData: { isModalOpen: false, modalChildren: 'form' },
-	setModalData: () => undefined
+	showModal: () => undefined,
+	hideModal: () => undefined
 });
 
 const Layout = ({ title = '', keywords = '', description = '', children }: IProps) => {
 	const [modalData, setModalData] = useState<IModalData>({
 		isModalOpen: false,
-		modalChildren: 'form'
+		modalChildren: ModalContent.FORM
 	});
 
+	const showModal = (content: string) => {
+		setModalData((prevState: IModalData) => {
+			return { ...prevState, isModalOpen: true, modalChildren: content };
+		});
+	};
+
+	const hideModal = () => {
+		setModalData((prevState: IModalData) => {
+			return { ...prevState, isModalOpen: false };
+		});
+	};
+
 	const modalContextValue = {
-		modalData,
-		setModalData
+		showModal,
+		hideModal
 	};
 
 	return (
@@ -53,6 +66,6 @@ interface IModalData {
 }
 
 interface ILayoutContextType {
-	modalData: IModalData;
-	setModalData: any;
+	showModal: Function;
+	hideModal: Function;
 }

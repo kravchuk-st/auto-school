@@ -4,16 +4,11 @@ import Link from 'next/link';
 import Image from 'next/image';
 import Button from '@/ui-kit/Button';
 import SocialLinks from '@/ui-kit/SocialLinks';
+import { ModalContent } from '@/types';
 import styles from './header.module.scss';
 
 const Header = () => {
-	const { setModalData } = useContext(ModalContext);
-
-	const handlerClick = () => {
-		setModalData((prevState: IModalData) => {
-			return { ...prevState, isModalOpen: true };
-		});
-	};
+	const { showModal } = useContext(ModalContext);
 
 	return (
 		<header className={styles.header}>
@@ -37,7 +32,7 @@ const Header = () => {
 							+7 (343) 289-10-40
 						</Link>
 					</div>
-					<Button title='ОБРАТНЫЙ ЗВОНОК' styleName={styles.modalBtn} fn={handlerClick} />
+					<Button title='ОБРАТНЫЙ ЗВОНОК' styleName={styles.modalBtn} onClick={() => showModal(ModalContent.FORM)} />
 				</div>
 				<nav className={styles.nav}>
 					<ul className={styles.nav__list}>
