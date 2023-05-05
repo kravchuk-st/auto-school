@@ -36,7 +36,7 @@ const advantagesData = [
 
 const Advantages = () => {
 	return (
-		<section className={styles.advantages}>
+		<section>
 			<div className='container'>
 				<h2 className={styles.title}>
 					Научись первоклассно водить и <span className='text-black'>сдай на права с 1 раза!</span>
