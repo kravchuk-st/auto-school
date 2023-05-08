@@ -108,15 +108,21 @@
 }
 
 .btn {
-  height: max-content;
   margin-left: 30px;
-  padding: 22px 25px;
+  width: 190px;
+  height: 60px;
   font-weight: 600;
   font-size: 13px;
   line-height: 16px;
-  letter-spacing: 0.06em;
   text-transform: uppercase;
   color: $color-light;
+  background-color: transparent;
   border: 1px solid $color-light;
   border-radius: 60px;
+  box-shadow: none;
+
+  &:hover {
+    background: #4c4b61;
+    box-shadow: none;
+  }
 }

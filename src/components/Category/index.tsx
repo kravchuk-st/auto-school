@@ -1,11 +1,5 @@
 import styles from './category.module.scss';
 
-interface IProps {
-	id: number;
-	title: string;
-	category: string;
-}
-
 const Category = ({ id, title, category }: IProps) => {
 	return (
 		<article className={styles.item}>
@@ -29,3 +23,9 @@ const Category = ({ id, title, category }: IProps) => {
 };
 
 export default Category;
+
+interface IProps {
+	id: number;
+	title: string;
+	category: string;
+}

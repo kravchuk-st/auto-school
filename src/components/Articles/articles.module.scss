@@ -8,15 +8,19 @@
   column-gap: 10px;
 
   &__btn {
+    width: auto;
+    height: auto;
     padding: 18px 25px;
     font-weight: 300;
     font-size: 15px; 
     color: $color-black;
     background: $bg-btn-secondary;
     border-radius: 25px;
+    box-shadow: none;
 
     &:hover {
       background: $color-danger-light;
+      box-shadow: none;
     }
   }
 }

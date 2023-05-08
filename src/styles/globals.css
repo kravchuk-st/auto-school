@@ -136,7 +136,7 @@ h2 {
   color: #393939;
 }
 
-.btn {
+button {
   display: inline-block;
   width: 300px;
   height: 90px;
@@ -149,10 +149,9 @@ h2 {
   background: #ee2f2f;
   box-shadow: 0px 15px 30px rgba(255, 0, 0, 0.2), 0px 3px 0px #d12121, inset 0px 0px 30px rgba(255, 255, 255, 0.2);
   border-radius: 60px;
-  transition: background .3s, box-shadow .3s;
 }
 
-.btn:hover {
+button:hover {
   background: #ff0303;
   box-shadow: 0px 15px 30px rgba(255, 0, 0, 0.5), 0px 3px 0px #d12121, inset 0px 0px 30px rgba(255, 255, 255, 0.2);
 }

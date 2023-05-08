@@ -57,9 +57,14 @@
   z-index: 10;
   top: 35px;
   right: 30px;
+  width: auto;
+  height: auto;
   display: block;
   margin-left: auto;
   font-size: 40px;
+  font-weight: 200;
   line-height: 0;
   color: $color-danger;
+  background-color: transparent;
+  box-shadow: none;
 }

@@ -32,18 +32,20 @@
 }
 
 .btn {
-  padding: 20px 30px;
-  font-weight: 600;
+  width: 220px;
+  height: 60px;
   font-size: 13px;
   line-height: 1.23;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: $color-dark;
   border: 1px solid $color-dark;
-  border-radius: 60px;
+  border-radius: 50px;
   background: transparent;
+  box-shadow: none;
 
   &:hover {
-    background: $color-danger-light;
+    color: $color-light;
+    border-color: $color-danger-active;
   }
 }

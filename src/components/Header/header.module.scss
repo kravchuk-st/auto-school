@@ -69,6 +69,8 @@
   font-size: 13px;
   letter-spacing: 0.06em;
   color: $color-dark;
+  background-color: transparent;
+  box-shadow: none;
   border: 1px solid $color-dark;
   border-radius: 60px;
 
@@ -76,6 +78,7 @@
     color: #fff;
     background: #F04343;
     border-color: #F04343;
+    box-shadow: none;
   }
 }
 

@@ -1,0 +1,144 @@
+@import '@/styles/variables.scss';
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  column-gap: 24px;
+  row-gap: 20px;
+}
+
+.btn {
+  width: 180px;
+  height: 60px;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0;
+  color: $color-text-gray;
+  background-color: $color-light;
+  border-radius: 30px;
+  box-shadow: none;
+
+  &:hover {
+    background-color: $color-danger-light;
+    box-shadow: none;
+  }
+
+  &.btn_active {
+    color: $color-light;
+    background-color: $color-danger;
+  }
+}
+
+.body {
+  margin-top: 55px;
+  display: flex;
+  column-gap: 30px;
+}
+
+.tariff {
+  &_col {
+    position: relative;
+    padding: 130px 40px 60px;
+    background-color: $color-light;
+    border-radius: 12px;
+  }
+
+  &_title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    color: $color-black;
+  }
+
+  &_online {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 380px;
+  }
+
+  &_offline {
+    width: 100%;
+
+    .tariff_title {
+      text-align: center;
+    }
+
+    .tariff__list {
+      max-height: 400px;
+      -moz-column-count: 2;
+      -webkit-column-count: 2;
+      column-count: 2;
+      column-width: 270px;
+      column-gap: 50px;
+      column-fill: auto;
+    }
+
+    .tariff_descr {
+      right: calc(50% - 175px);
+    }
+  }
+
+  &_btn {
+    position: absolute;
+    z-index: 3;
+    left: calc(50% - 150px);
+    bottom: -45px;
+  }
+}
+
+.online_img {
+  max-width: 200px;
+  height: auto;
+  position: absolute;
+  z-index: 2;
+  left: 40px;
+  top: -55px;
+}
+
+.tariff_descr {
+  width: 120px;
+  height: 120px;
+  padding: 27px 0;
+  position: absolute;
+  z-index: 3;
+  right: 35px;
+  top: -45px;
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 1.25;
+  text-align: center;
+  color: $color-light;
+  background-color: $color-danger;
+  border-radius: 50%;
+
+  .price {
+    font-weight: 700;
+    font-size: 20px;
+  }
+}
+
+.offline_img {
+  max-width: 295px;
+  height: auto;
+  position: absolute;
+  z-index: 2;
+  left: calc(50% - 170px);
+  top: -55px;
+}
+
+.tariff__list{
+  margin-top: 20px;
+  list-style-type: disc;
+  list-style-position: inside;
+
+  li:not(:first-child) {
+    margin-top: 10px;
+  }
+
+  li::marker {
+    padding-inline-start: 1ch;
+    color: $color-danger;
+    box-shadow: 0px 0px 4px $color-danger;
+  }
+}
