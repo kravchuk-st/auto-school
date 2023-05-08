@@ -11,21 +11,21 @@ const SocialLinks = ({ styleName = '' }: IProps) => {
 			<li className={styles.social__item}>
 				<a className={styles.social__link} href='#' target='_blank' rel='noreferrer'>
 					<svg className={stylesHelper(styles.social__img, styles.social__img_wa)}>
-						<use xlinkHref='./svg/social/whatsapp.svg#social' />
+						<use xlinkHref='/svg/social/whatsapp.svg#social' />
 					</svg>
 				</a>
 			</li>
 			<li className={styles.social__item}>
 				<a className={styles.social__link} href='#' target='_blank' rel='noreferrer'>
 					<svg className={stylesHelper(styles.social__img, styles.social__img_tg)}>
-						<use xlinkHref='./svg/social/telegram.svg#social' />
+						<use xlinkHref='/svg/social/telegram.svg#social' />
 					</svg>
 				</a>
 			</li>
 			<li className={styles.social__item}>
 				<a className={styles.social__link} href='#' target='_blank' rel='noreferrer'>
 					<svg className={stylesHelper(styles.social__img, styles.social__img_v)}>
-						<use xlinkHref='./svg/social/viber.svg#social' />
+						<use xlinkHref='/svg/social/viber.svg#social' />
 					</svg>
 				</a>
 			</li>

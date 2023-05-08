@@ -34,7 +34,7 @@
 }
 
 .body {
-  padding: 20px 0 5px 30px;
+  padding: 20px 0 10px 30px;
   height: 180px;
   border-radius: 0 10px 10px 10px;
   color: $color-black;
@@ -48,17 +48,18 @@
     height: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
   }
 
   &__title {
     font-size: 16px;
     font-weight: 500;
     line-height: 1.4375;
-    flex: 1 0 auto;
   }
 
   &__category {
     font-size: 90px;
     font-weight: 500;
+    line-height: 1;
   }
 }

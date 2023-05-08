@@ -1,6 +1,7 @@
 import Link from 'next/link';
-import Button from '@/ui-kit/Button/index';
-import AdvantageCard from '@/ui-kit/AdvantageCard/index';
+import List from '@/components/List';
+import Button from '@/ui-kit/Button';
+import ArticleCard from '@/ui-kit/ArticleCard';
 import styles from './articles.module.scss';
 
 const ArticlesData = [
@@ -39,9 +40,7 @@ const Articles = () => {
 					<Button title='Выбор автомобиля' styleName={styles.sort__btn} />
 				</div>
 				<div className={styles.cards}>
-					{ArticlesData.map((el) => (
-						<AdvantageCard id={90} address={el.title} key={el.id} />
-					))}
+					<List items={ArticlesData} renderItem={(i) => <ArticleCard item={i} key={i.id} />} />
 					<div className={styles.cards__item}>
 						<Link className={styles.cards__link} href='#'>
 							Читать блог

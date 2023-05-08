@@ -4,11 +4,6 @@ import { ModalContent } from '@/types';
 import Button from '@/ui-kit/Button';
 import styles from './advantage-card.module.scss';
 
-interface IProps {
-	id: number;
-	address: string;
-}
-
 const AdvantageCard = ({ id, address }: IProps) => {
 	const { showModal } = useContext(ModalContext);
 
@@ -16,7 +11,7 @@ const AdvantageCard = ({ id, address }: IProps) => {
 		<div
 			className={styles.item}
 			style={{
-				backgroundImage: `url("./img/advantage/${id}.png")`
+				backgroundImage: `url("/img/advantage/${id}.png")`
 			}}
 		>
 			<p className={styles.address}>{address}</p>
@@ -26,3 +21,8 @@ const AdvantageCard = ({ id, address }: IProps) => {
 };
 
 export default AdvantageCard;
+
+interface IProps {
+	id: number;
+	address: string;
+}

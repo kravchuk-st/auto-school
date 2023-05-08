@@ -16,7 +16,7 @@ const Footer = () => {
 			<div className='container'>
 				<div className={styles.logo}>
 					<Link className={styles.logo__link} href='./'>
-						<Image className={styles.logo__img} src='./svg/logo.svg' width={255} height={68} alt='logo' />
+						<Image className={styles.logo__img} src='/svg/logo.svg' width={255} height={68} alt='logo' />
 					</Link>
 					<p className={styles.logo__text}>
 						Обучение на права <span className='text-gray'>в&nbsp;Екатеринбурге всего за</span> 4,817 руб/месяц

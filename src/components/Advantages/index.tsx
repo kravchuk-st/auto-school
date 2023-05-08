@@ -1,3 +1,4 @@
+import List from '../List';
 import Advantage from '../Advantage';
 import styles from './advantages.module.scss';
 
@@ -42,9 +43,7 @@ const Advantages = () => {
 					Научись первоклассно водить и <span className='text-black'>сдай на права с 1 раза!</span>
 				</h2>
 				<div className={styles.list}>
-					{advantagesData.map((el) => (
-						<Advantage {...el} key={el.id} />
-					))}
+					<List items={advantagesData} renderItem={(i) => <Advantage item={i} key={i.id} />} />
 				</div>
 			</div>
 		</section>
